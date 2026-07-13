@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaFlow | Productivity Landing Page</title>
+    <meta name="description" content="A responsive productivity landing page created for the CODSOFT Web Development Internship Level 1 Task 2.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-mark">N</span>
+                <span class="logo-text">NovaFlow</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero section bg-secondary">
+            <div class="container hero-container grid-2-col">
+                <div class="hero-content">
+                    <span class="badge">Simple Productivity for Everyday Goals</span>
+                    <h1>Plan Better.<br><span class="highlight">Work Smarter.</span><br>Achieve More.</h1>
+                    <p>NovaFlow helps students and young professionals organize tasks, track goals, and stay focused with a simple and distraction-free workspace.</p>
+                    <div class="button-group">
+                        <a href="#contact" class="btn btn-primary">Start Organizing</a>
+                        <a href="#features" class="btn btn-outline">Explore Features</a>
+                    </div>
+                    <div class="trust-line">
+                        <span>Simple</span> &bull; <span>Responsive</span> &bull; <span>Easy to Use</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-illustration.svg" alt="NovaFlow Productivity Dashboard Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Features Section -->
+        <section id="features" class="features section">
+            <div class="container text-center">
+                <h2 class="section-title">Everything You Need to Stay Organized</h2>
+                <p class="section-subtitle">NovaFlow combines essential planning tools in one clean and easy-to-use interface.</p>
+                
+                <div class="grid-3-col features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">&#10004;</div>
+                        <h3>Task Planning</h3>
+                        <p>Create, organize, and prioritize your daily tasks.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#127919;</div>
+                        <h3>Goal Tracking</h3>
+                        <p>Set clear goals and monitor your progress over time.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128276;</div>
+                        <h3>Smart Reminders</h3>
+                        <p>Stay updated with simple reminders for important work.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128269;</div>
+                        <h3>Daily Focus</h3>
+                        <p>Keep attention on the tasks that matter most.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128200;</div>
+                        <h3>Progress Overview</h3>
+                        <p>View your completed tasks and overall productivity.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128241;</div>
+                        <h3>Responsive Design</h3>
+                        <p>Use NovaFlow comfortably across desktop, tablet, and mobile.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How It Works Section -->
+        <section id="how-it-works" class="how-it-works section bg-secondary">
+            <div class="container text-center">
+                <h2 class="section-title">How NovaFlow Works</h2>
+                
+                <div class="grid-3-col steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3>Create Your Plan</h3>
+                        <p>Add your tasks, goals, and important deadlines.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3>Organize Your Day</h3>
+                        <p>Prioritize work and focus on one task at a time.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3>Track Your Progress</h3>
+                        <p>Review completed tasks and improve your routine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Benefits Section -->
+        <section id="benefits" class="benefits section">
+            <div class="container grid-2-col">
+                <div class="benefits-image">
+                    <img src="assets/app-preview.svg" alt="NovaFlow Simple Task Dashboard Preview">
+                </div>
+                <div class="benefits-content">
+                    <h2 class="section-title">Build Better Habits With a Clear System</h2>
+                    <p>A clear daily system can reduce confusion, improve focus, and help you complete important work consistently.</p>
+                    <ul class="benefits-list">
+                        <li><span class="check-icon">&#10004;</span> Clear daily priorities</li>
+                        <li><span class="check-icon">&#10004;</span> Less distraction</li>
+                        <li><span class="check-icon">&#10004;</span> Simple progress tracking</li>
+                        <li><span class="check-icon">&#10004;</span> Better time management</li>
+                        <li><span class="check-icon">&#10004;</span> Mobile-friendly interface</li>
+                    </ul>
+                    <a href="#features" class="btn btn-outline">View Features</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials Section -->
+        <section id="testimonials" class="testimonials section bg-secondary">
+            <div class="container text-center">
+                <h2 class="section-title">What Users Say</h2>
+                <p class="section-subtitle note">Sample feedback used for demonstration purposes.</p>
+                
+                <div class="grid-3-col testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">“NovaFlow makes my daily tasks feel much easier to manage.”</p>
+                        <div class="user-info">
+                            <div class="avatar">A</div>
+                            <div class="user-details">
+                                <h4>Ananya</h4>
+                                <span>Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">“The clean layout helps me focus without unnecessary distractions.”</p>
+                        <div class="user-info">
+                            <div class="avatar">R</div>
+                            <div class="user-details">
+                                <h4>Rahul</h4>
+                                <span>Intern</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">“I like how simple it is to plan goals and check my progress.”</p>
+                        <div class="user-info">
+                            <div class="avatar">M</div>
+                            <div class="user-details">
+                                <h4>Meera</h4>
+                                <span>Young Professional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Call-to-Action Section -->
+        <section id="contact" class="cta section">
+            <div class="container text-center cta-container">
+                <h2>Ready to Organize Your Day?</h2>
+                <p>Start building a clearer and more productive routine with NovaFlow.</p>
+                <button id="cta-button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>NovaFlow</h2>
+                    <p>A demonstration productivity landing page created for the CODSOFT Web Development Internship.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:hello@novaflow.demo">hello@novaflow.demo</a></p>
+                    <p class="note">This is fictional contact information for demonstration only.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaFlow. Created by Saanikommu Jagadeshwar Reddy.</p>
+                <p>CODSOFT Web Development Internship – Level 1 Task 2</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
