@@ -12,8 +12,9 @@ A responsive personal portfolio website built using HTML, CSS, and JavaScript.
 Status: Completed
 A clean, responsive landing page for a fictional productivity platform named NovaFlow.
 
-### Task 3 – Calculator
-Status: To be added.
+### Task 3 – Basic Calculator
+Status: Completed
+A responsive basic calculator built using HTML, CSS, and JavaScript.
 
 ## Author
 

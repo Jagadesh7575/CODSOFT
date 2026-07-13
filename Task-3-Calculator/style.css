@@ -1,0 +1,279 @@
+/* =========================================
+   1. CSS Variables
+   ========================================= */
+:root {
+    /* Colors based on user prompt */
+    --bg-page: #05050a;
+    --bg-calc: #111018;
+    --bg-display: #0b0912;
+    --btn-number: #1d1a26;
+    --btn-operator: #6d28d9;
+    --btn-operator-hover: #7c3aed;
+    --btn-equals: #8b5cf6;
+    --btn-clear: #dc2626;
+    --btn-delete: #ea580c;
+    --text-main: #f8fafc;
+    --text-secondary: #c4b5fd;
+    --border-color: rgba(167, 139, 250, 0.22);
+    
+    --font-main: 'Poppins', Arial, sans-serif;
+    --transition: all 0.2s ease;
+}
+
+/* =========================================
+   2. Reset
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   3. Body and Page Layout
+   ========================================= */
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================================
+   4. Heading
+   ========================================= */
+.page-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.page-header p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   5. Calculator Container
+   ========================================= */
+.calculator-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.calculator {
+    background-color: var(--bg-calc);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =========================================
+   6. Display
+   ========================================= */
+.display {
+    background-color: var(--bg-display);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 120px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.previous-operand {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    min-height: 24px;
+}
+
+.current-operand {
+    color: var(--text-main);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    max-width: 100%;
+}
+
+/* =========================================
+   7. Button Grid
+   ========================================= */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+/* =========================================
+   8. Button Variants
+   ========================================= */
+.btn-number {
+    background-color: var(--btn-number);
+    border: 1px solid transparent;
+}
+
+.btn-operator {
+    background-color: var(--btn-operator);
+}
+
+.btn-equals {
+    background-color: var(--btn-equals);
+}
+
+.btn-clear {
+    background-color: var(--btn-clear);
+    font-size: 1.1rem;
+}
+
+.btn-delete {
+    background-color: var(--btn-delete);
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   9. Hover and Focus States
+   ========================================= */
+.btn:focus-visible {
+    outline: 2px solid var(--text-secondary);
+    outline-offset: 2px;
+}
+
+.btn-number:hover {
+    background-color: #2a2536;
+}
+
+.btn-number:active {
+    background-color: #383147;
+    transform: scale(0.95);
+}
+
+.btn-operator:hover {
+    background-color: var(--btn-operator-hover);
+}
+
+.btn-operator:active {
+    transform: scale(0.95);
+}
+
+.btn-equals:hover {
+    background-color: #9f7aea;
+}
+
+.btn-equals:active {
+    transform: scale(0.95);
+}
+
+.btn-clear:hover {
+    background-color: #ef4444;
+}
+
+.btn-clear:active {
+    transform: scale(0.95);
+}
+
+.btn-delete:hover {
+    background-color: #f97316;
+}
+
+.btn-delete:active {
+    transform: scale(0.95);
+}
+
+/* Footer styles */
+.page-footer {
+    text-align: center;
+    margin-top: 32px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.page-footer p {
+    margin-bottom: 4px;
+}
+
+/* =========================================
+   10. Responsive Media Queries
+   ========================================= */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 16px;
+    }
+
+    .calculator {
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .btn {
+        min-height: 56px;
+        font-size: 1.1rem;
+    }
+    
+    .display {
+        min-height: 100px;
+        padding: 16px;
+    }
+    
+    .current-operand {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .buttons-grid {
+        gap: 8px;
+    }
+    
+    .btn {
+        min-height: 50px;
+    }
+}
