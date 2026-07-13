@@ -1,22 +1,20 @@
-# Personal Portfolio - CODSOFT Level 1 Task 1
+# CODSOFT Web Development Internship
 
-## Description
-This is a personal portfolio website created as part of the CODSOFT Web Development Internship Level 1 Task 1.
+This repository contains the projects completed as part of my CODSOFT Web Development Internship.
 
-## Features
-- Responsive design
-- Header and navigation
-- About section
-- Skills section
-- Projects section
-- Resume download section
-- Contact section
-- Footer
+## Tasks
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+### Task 1 – Personal Portfolio
+A responsive personal portfolio website built using HTML, CSS, and JavaScript.
+
+### Task 2 – Landing Page
+To be added.
+
+### Task 3 – Calculator
+To be added.
 
 ## Author
-Saanikommu Jagadeshwar Reddy
+
+Saanikommu Jagadeshwar Reddy  
+Third-Year B.Tech Information Technology Student  
+NRI Institute of Technology
