@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saanikommu Jagadeshwar Reddy - Portfolio</title>
+    <meta name="description" content="Personal Portfolio of Saanikommu Jagadeshwar Reddy, an aspiring Frontend Developer.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Saanikommu Jagadeshwar Reddy</h1>
+                <p class="tagline">B.Tech IT Student | Aspiring Frontend Developer</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container hero-content">
+            <h2 class="fade-in">Hi, I’m <span class="highlight">Saanikommu Jagadeshwar Reddy</span></h2>
+            <h3 class="fade-in delay-1">Aspiring Frontend Developer and B.Tech IT Student</h3>
+            <p class="fade-in delay-2">I build clean, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and React.</p>
+            <div class="hero-buttons fade-in delay-3">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="assets/resume.pdf" download="Saanikommu-Jagadeshwar-Reddy-Resume.pdf" class="btn btn-primary">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Placeholder image area, fallback if image not found -->
+                    <img src="assets/profile.jpg" alt="Saanikommu Jagadeshwar Reddy" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%231e293b\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-family=\'sans-serif\' font-size=\'16\'%3EProfile Image Placeholder%3C/text%3E%3C/svg%3E';">
+                </div>
+                <div class="about-text">
+                    <p>I am a 2nd year B.Tech Information Technology student at NRI Institute of Technology, Vijayawada. I am passionate about frontend development, modern UI design, and building real-world web applications. I enjoy creating clean, responsive, and interactive websites using HTML, CSS, JavaScript, React, and modern development tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Vite</div>
+                <div class="skill-card">Tailwind CSS</div>
+                <div class="skill-card">Supabase</div>
+                <div class="skill-card">Git</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">Figma</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">AI Tools</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/orvix.png" alt="Orvix Project" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%231e293b\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-family=\'sans-serif\' font-size=\'16\'%3EImage Placeholder%3C/text%3E%3C/svg%3E';">
+                    </div>
+                    <div class="project-info">
+                        <h3>Orvix</h3>
+                        <p>A private chat application focused on secure messaging, modern themes, user profiles, and a smooth mobile app experience.</p>
+                        <div style="margin-top: 15px; display: flex; gap: 10px;">
+                            <a href="https://github.com/Jagadesh7575/Orvix" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">GitHub</a>
+                            <a href="https://nanii-orvix.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/heliowatch.png" alt="HelioWatch Project" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%231e293b\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-family=\'sans-serif\' font-size=\'16\'%3EImage Placeholder%3C/text%3E%3C/svg%3E';">
+                    </div>
+                    <div class="project-info">
+                        <h3>HelioWatch</h3>
+                        <p>A solar-powered smartwatch e-commerce project with product listings, smart features, and a modern responsive shopping interface.</p>
+                        <div style="margin-top: 15px; display: flex; gap: 10px;">
+                            <a href="https://github.com/Jagadesh7575/Helio-Watch" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">GitHub</a>
+                            <a href="https://nanii-heliowatch.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/solara.png" alt="Solara Project" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'250\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'400\' height=\'250\' fill=\'%231e293b\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-family=\'sans-serif\' font-size=\'16\'%3EImage Placeholder%3C/text%3E%3C/svg%3E';">
+                    </div>
+                    <div class="project-info">
+                        <h3>Solara</h3>
+                        <p>A modern product website built for a solar smartwatch concept with clean UI, responsive layout, and product-focused sections.</p>
+                        <div style="margin-top: 15px; display: flex; gap: 10px;">
+                            <a href="https://github.com/Jagadesh7575/solara" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">GitHub</a>
+                            <a href="https://nanii-solara.vercel.app/" target="_blank" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section bg-alt text-center">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <p>You can download my resume using the button below.</p>
+            <a href="assets/resume.pdf" download="Saanikommu-Jagadeshwar-Reddy-Resume.pdf" class="btn btn-primary">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:jktech7575@gmail.com">jktech7575@gmail.com</a></li>
+                        <li><strong>Location:</strong> Vijayawada, Andhra Pradesh, India</li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/Jagadesh7575" target="_blank">github.com/Jagadesh7575</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jagadeshwarreddy-saanikommu-886622333/" target="_blank">LinkedIn Profile</a></li>
+                    </ul>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Saanikommu Jagadeshwar Reddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
